@@ -5,9 +5,9 @@ The paper was studied and analyzed in order to higlight the main points, wich we
 
 ### Code
 I developed the pipeline proposed in Agarwal-Farid's paper in Python language with the following library
-** scipy
-** opencv
-** numpy
+* scipy
+* opencv
+* numpy
 all installable by requirements.txt file given with code
 
 
