@@ -9,7 +9,7 @@ I developed the pipeline proposed in Agarwal-Farid's paper in Python language wi
 * opencv
 * numpy
 
-all installable by requirements.txt file given with code
+all installable by [requirements file](https://github.com/jabosso/JPEG_Dimples_tool/blob/main/requirements.txt) given with code
 
 
 
