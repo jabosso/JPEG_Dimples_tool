@@ -8,6 +8,7 @@ I developed the pipeline proposed in Agarwal-Farid's paper in Python language wi
 * scipy
 * opencv
 * numpy
+
 all installable by requirements.txt file given with code
 
 
