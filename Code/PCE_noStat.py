@@ -12,10 +12,10 @@ def PCE_noStat(C, shift_range=[0,0], squaresize=11):
         peakheight, coord = ord[0]
         xpeak, ypeak =coord
         C_without_peak = RemoveNeighborhood(C,[xpeak,ypeak],squaresize)
+        PCE_energy = np.mean(np.dot(C_without_peak,C_without_peak))
+        PCE = peakheight*peakheight/PCE_energy*np.sign(peakheight)
 
-
-    ret =[]
-    return ret
+    return
 
 
 
@@ -33,7 +33,8 @@ def sort(A):
 def RemoveNeighborhood(X,x,asize):
     m, n =X.shape
     radius =(asize-1)/2
-    X_s = np.roll(X,(radius-x[0]+1, radius-x[1]+1))
+    X_s = np.roll(X,int(radius-x[0])+1, axis=0) #----- ERROR
+    X_s = np.roll(X_s, int(radius - x[1]) + 1, axis=1)
     Y =X[asize+1:,0:asize]
     Y= Y.reshape(-1)
-    print(Y) #------------------------- DEVO TROVARE IL MODO DI ESCLUDERE UN INTORNO DEL PICCO!
+    return Y
